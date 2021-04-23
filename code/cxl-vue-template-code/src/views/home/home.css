@@ -1,0 +1,56 @@
+.home .home-header {
+  display: flex;
+  height: inherit;
+  width: 100%;
+  min-width: 100%;
+}
+.home .home-header .home-header-item {
+  width: 100%;
+}
+.home .home-header .home-header-item .right-haeder {
+  padding-right: 2rem;
+  text-align: end;
+}
+.home .home-header .home-header-item .user-header-img {
+  width: 50px;
+  height: 50px;
+  text-align: end;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px 1px #5e8ab67d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 11px;
+}
+.home .el-header {
+  background-color: #1b66c9;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  width: 100%;
+}
+.home .el-footer {
+  background-color: #1d1f22;
+  color: #fff;
+  text-align: center;
+  line-height: 28px !important;
+  width: 100%;
+  height: 30px !important;
+}
+.home .el-aside {
+  background-color: #666;
+  color: #333;
+  line-height: 200px;
+  width: 219px;
+  min-height: 100%;
+  height: 100%;
+}
+.home body > .el-container {
+  margin-bottom: 40px;
+}
+.home .el-container:nth-child(5) .el-aside,
+.home .el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+.home .el-container:nth-child(7) .el-aside {
+  line-height: 320px;
+}

@@ -1,6 +1,42 @@
 .login-body {
+  background-color: #1d1d1d;
+  min-height: 100vh;
+  height: 100vh;
   text-align: center;
+  margin: 0 auto;
 }
-.login-body .login-body-title {
-  color: red;
+.login-body .login-form-footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login-body .login-form-title {
+  text-align: center;
+  color: #fff;
+  font-size: larger;
+  margin: 1.2rem;
+}
+.login-body .login-logo {
+  z-index: 10;
+  position: relative;
+  left: 0%;
+  top: 31%;
+}
+.login-body .login-form {
+  z-index: 50;
+  border: 1px solid blue;
+  margin: 0 27%;
+  border-radius: 11px;
+  box-shadow: 1px 1px 14px 1px #606065;
+  background-color: #41418036;
+}
+.login-body .login-form .el-form-item__label {
+  color: #fff im !important;
+}
+@media screen and (max-width: 500px) {
+  .login-form {
+    z-index: 50;
+    border: 1px solid red;
+    margin: 0 2%;
+    border-radius: 4px;
+  }
 }
