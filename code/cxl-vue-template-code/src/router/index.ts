@@ -19,6 +19,16 @@ const routes: Array<RouteRecordRaw> = [
         path: '/user',
         name: 'User',
         component: () => import("../views/home/user/User.vue"),
+      },
+      {
+        path: '/role',
+        name: 'Role',
+        component: () => import("../views/home/role/Role.vue")
+      },
+      {
+        path: '/sql-format',
+        name: 'SqlFormat',
+        component: () => import("../views/home/plugins/sql-format/SqlFormat.vue")
       }
     ]
   },

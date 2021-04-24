@@ -41,9 +41,19 @@
               </template>
               <el-menu-item-group>
                 <el-menu-item index="user">用户管理</el-menu-item>
-                <el-menu-item index="1-2">角色管理</el-menu-item>
+                <el-menu-item index="role">角色管理</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
+            <el-submenu index="plugins">
+              <template #title>
+                <i class="el-icon-location"></i>
+                <span>插件库</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="sql-format">SQL格式化</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+
             <el-menu-item index="2">
               <i class="el-icon-menu"></i>
               <template #title>测试导航</template>
@@ -57,7 +67,7 @@
         </el-container>
       </el-container>
       <el-footer>
-        &copy; copyright 版权归属：https://github.com/18696232390/cxl-vue-template
+        &copy; Copyright 版权归属：https://github.com/18696232390/cxl-vue-template
         <a href="https://github.com/18696232390/cxl-vue-template">点击查看</a></el-footer
       >
     </el-container>

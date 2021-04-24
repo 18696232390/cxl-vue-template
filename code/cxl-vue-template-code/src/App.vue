@@ -10,7 +10,7 @@ export default {
   name: 'App',
   setup() {
     console.log('初始化echarts对象', echarts);
-    provide('ec', echarts); //provide
+    provide('echarts', echarts); //provide
   },
   components: {},
 };
