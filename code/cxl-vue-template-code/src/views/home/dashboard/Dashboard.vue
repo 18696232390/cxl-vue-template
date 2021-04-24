@@ -1,4 +1,8 @@
 <template>
+  <el-breadcrumb separator-class="el-icon-arrow-right">
+    <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+    <el-breadcrumb-item>控制台</el-breadcrumb-item>
+  </el-breadcrumb>
   <div class="dashboard">
     <div>
       <Census></Census>

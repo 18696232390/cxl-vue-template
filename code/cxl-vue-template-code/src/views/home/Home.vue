@@ -4,16 +4,40 @@
       <el-header>
         <div class="home-header">
           <div class="home-header-item left-title">
-            <div>cxl-vue-template</div>
+            <div class="left-title logo">
+              <img class="logo logo-img" src="/img/logo/logo.svg" />
+            </div>
+            <div class="left-title title">
+              <div>后台管理系统</div>
+            </div>
           </div>
           <div class="home-header-item left-nav"></div>
-          <div class="home-header-item right-search"></div>
-          <div class="home-header-item right-haeder">
+          <div class="home-header-item right-search" style="text-align: end; width: 70rem">
+            <div class="right-search search">
+              <el-input prefix-icon="el-icon-search" v-model="searchText" placeholder="搜索..."></el-input>
+            </div>
+            <div class="right-search split"></div>
+            <div class="right-search email">
+              <el-badge :value="12" class="item">
+                <i class="el-icon-s-comment"> </i>
+              </el-badge>
+            </div>
+          </div>
+          <div class="home-header-item right-haeder" style="text-align: end; margin-right: 1rem; width: 52rem">
             欢迎：<span>超级管理员</span>
-            <img
-              class="user-header-img"
-              src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3504501744,3249216864&fm=26&gp=0.jpg"
-            />
+            <el-dropdown>
+              <img
+                class="user-header-img"
+                src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3504501744,3249216864&fm=26&gp=0.jpg"
+              />
+              <template #dropdown>
+                <el-dropdown-menu>
+                  <el-dropdown-item icon="el-icon-s-operation">个人资料</el-dropdown-item>
+                  <el-dropdown-item icon="el-icon-edit">修改密码</el-dropdown-item>
+                  <el-dropdown-item icon="el-icon-back" @click="loginOut()">退出登录</el-dropdown-item>
+                </el-dropdown-menu>
+              </template>
+            </el-dropdown>
           </div>
         </div>
       </el-header>
@@ -22,40 +46,50 @@
           <el-menu
             :uniqueOpened="true"
             default-active="2"
-            class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose"
-            background-color="#545c64"
-            text-color="#fff"
-            active-text-color="#ffd04b"
+            background-color="#fff"
+            text-color="#000"
+            active-text-color="#000"
             @select="selectMenu"
           >
             <el-menu-item index="dashboard">
-              <i class="el-icon-menu"></i>
+              <i class="el-icon-s-home"></i>
               <template #title>首页</template>
             </el-menu-item>
             <el-submenu index="system">
               <template #title>
-                <i class="el-icon-location"></i>
+                <i class="el-icon-setting"></i>
                 <span>系统管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="user">用户管理</el-menu-item>
-                <el-menu-item index="role">角色管理</el-menu-item>
+                <el-menu-item index="user">
+                  <i class="el-icon-user"></i>
+                  <template #title>用户管理</template>
+                </el-menu-item>
+                <el-menu-item index="role">
+                  <i class="el-icon-star-on"></i>
+                  <template #title>角色管理</template>
+                </el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-submenu index="plugins">
               <template #title>
-                <i class="el-icon-location"></i>
+                <i class="el-icon-s-open"></i>
                 <span>插件库</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="sql-format">SQL格式化</el-menu-item>
+                <el-menu-item index="sql-format">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>SQL格式化</span>
+                  </template>
+                </el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
             <el-menu-item index="2">
-              <i class="el-icon-menu"></i>
+              <i class="el-icon-c-scale-to-original"></i>
               <template #title>测试导航</template>
             </el-menu-item>
           </el-menu>
@@ -67,9 +101,11 @@
         </el-container>
       </el-container>
       <el-footer>
-        &copy; Copyright 版权归属：https://github.com/18696232390/cxl-vue-template
-        <a href="https://github.com/18696232390/cxl-vue-template">点击查看</a></el-footer
-      >
+        <span class="home-footer-text">
+          &copy; Copyright 版权归属：https://github.com/18696232390/cxl-vue-template
+          <a href="https://github.com/18696232390/cxl-vue-template">点击查看</a>
+        </span>
+      </el-footer>
     </el-container>
   </div>
 </template>
@@ -80,9 +116,11 @@ import { defineComponent, toRefs, reactive, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 export default defineComponent({
   name: 'Home',
+
   setup() {
     const route = useRouter();
     const data = reactive({
+      transitionName: '',
       isCollapse: true,
       searchText: '',
       test: (index) => {
@@ -97,6 +135,21 @@ export default defineComponent({
       selectMenu(key, t) {
         console.log('点击导航=>', key, t);
         route.push(key);
+      },
+
+      // 退出登录
+      loginOut() {
+        this.$confirm('确定要退出登录吗?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning',
+        }).then(() => {
+          route.push('/login');
+          this.$message({
+            type: 'success',
+            message: '登出成功!',
+          });
+        });
       },
     });
 

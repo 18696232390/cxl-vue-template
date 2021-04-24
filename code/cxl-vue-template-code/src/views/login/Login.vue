@@ -1,11 +1,10 @@
-/* eslint-disable no-redeclare */
 <template>
   <div class="login-body">
-    <div class="login-logo">
+    <!-- <div class="login-logo">
       <div>
         <div data-role="cube"></div>
       </div>
-    </div>
+    </div> -->
     <div class="login-form">
       <div class="login-form-card">
         <div class="login-form-title">
@@ -13,10 +12,10 @@
         </div>
         <div class="login-form-content">
           <el-form :model="loginFormData">
-            <el-form-item label="用户名" label-width="80px">
+            <el-form-item label-width="0px">
               <el-input v-model="loginFormData.username" placeholder="请输入用户名"></el-input>
             </el-form-item>
-            <el-form-item label="密码" label-width="80px">
+            <el-form-item label-width="0px">
               <el-input type="password" v-model="loginFormData.password" placeholder="请输入密码"></el-input>
             </el-form-item>
           </el-form>
@@ -24,7 +23,8 @@
         <div>
           <center>
             <div class="login-form-footer">
-              <button class="button shadowed info" @click="loginHandler()">登 录</button>
+              <button class="login-form-btn login" @click="loginHandler()">登 录</button>
+              <button class="login-form-btn register" @click="loginHandler()">注 册</button>
             </div>
           </center>
         </div>
@@ -35,12 +35,13 @@
 
 <script lang="ts">
 import { defineComponent, toRefs, reactive, onMounted } from 'vue';
-
 import doGet from './login';
 import { useRouter } from 'vue-router';
 export default defineComponent({
   name: 'Login',
-
+  components: {
+    // eslint-disable-next-line vue/no-unused-components
+  },
   setup() {
     const route = useRouter();
     const data = reactive({

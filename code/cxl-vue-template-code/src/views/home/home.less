@@ -1,25 +1,41 @@
 .home {
+  .el-badge__content.is-fixed {
+    top: 14px !important;
+    right: 12px !important;
+  }
+
   .home-header {
     // border: 1px solid red;
     display: flex;
     height: inherit;
     width: 100%;
     min-width: 100%;
+
+    .left-title {
+      display: flex;
+    }
+    .right-search {
+      display: flex;
+      .search {
+        width: 70%;
+        margin-top: 14px;
+        height: max-content;
+      }
+      .split {
+        width: 10%;
+      }
+      .email {
+        width: 20%;
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 2px;
+        cursor: pointer;
+      }
+    }
+
     .home-header-item {
       //   border: 1px solid blue;
       width: 100%;
-
-      .left-title {
-      }
-
-      .left-nav {
-      }
-
-      .right-search {
-      }
-
-      .right-msg {
-      }
 
       .right-haeder {
         text-align: end;
@@ -27,9 +43,25 @@
         text-align: end;
       }
 
+      .left-title {
+        display: flex;
+        .logo {
+          text-align: center;
+          height: fit-content;
+          margin-top: 6px;
+          margin-left: 15px;
+          margin-right: 6px;
+        }
+        .logo-img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
       .user-header-img {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
+
         text-align: end;
 
         border-radius: 28px;
@@ -41,37 +73,70 @@
     }
   }
 
+  .home-footer-text {
+    color: #fff;
+    font-size: 12px;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
   .el-header {
-    background-color: #1b66c9;
+    padding: 0 0;
     color: #fff;
     text-align: center;
     line-height: 60px;
     width: 100%;
+    background: #667db6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(102, 125, 182),
+      rgb(0, 130, 200),
+      rgb(0, 130, 200),
+      rgb(102, 125, 182)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(102, 125, 182),
+      rgb(0, 130, 200),
+      rgb(0, 130, 200),
+      rgb(102, 125, 182)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   .el-footer {
-    background-color: #1d1f22;
     color: #fff;
     text-align: center;
     line-height: 28px !important;
     width: 100%;
     height: 30px !important;
+    background: #0046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(0, 0, 70),
+      rgb(28, 181, 224)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   .el-aside {
-    background-color: #666;
-    color: #333;
     line-height: 200px;
-    width: 219px;
+    width: 220px !important;
     min-height: 100%;
     height: 100%;
-  }
-
-  .el-main {
-  }
-
-  body > .el-container {
-    margin-bottom: 40px;
+    background: #e0eafc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(224, 234, 252),
+      rgb(207, 222, 243)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(224, 234, 252),
+      rgb(207, 222, 243)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   .el-container:nth-child(5) .el-aside,
@@ -82,4 +147,9 @@
   .el-container:nth-child(7) .el-aside {
     line-height: 320px;
   }
+}
+
+/deep/.el-badge__content.is-fixed {
+  top: 14px !important;
+  right: 12px !important;
 }

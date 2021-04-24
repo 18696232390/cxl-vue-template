@@ -1,8 +1,33 @@
+.home .el-badge__content.is-fixed {
+  top: 14px !important;
+  right: 12px !important;
+}
 .home .home-header {
   display: flex;
   height: inherit;
   width: 100%;
   min-width: 100%;
+}
+.home .home-header .left-title {
+  display: flex;
+}
+.home .home-header .right-search {
+  display: flex;
+}
+.home .home-header .right-search .search {
+  width: 70%;
+  margin-top: 14px;
+  height: max-content;
+}
+.home .home-header .right-search .split {
+  width: 10%;
+}
+.home .home-header .right-search .email {
+  width: 20%;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 2px;
+  cursor: pointer;
 }
 .home .home-header .home-header-item {
   width: 100%;
@@ -11,9 +36,23 @@
   padding-right: 2rem;
   text-align: end;
 }
+.home .home-header .home-header-item .left-title {
+  display: flex;
+}
+.home .home-header .home-header-item .left-title .logo {
+  text-align: center;
+  height: fit-content;
+  margin-top: 6px;
+  margin-left: 15px;
+  margin-right: 6px;
+}
+.home .home-header .home-header-item .left-title .logo-img {
+  width: 40px;
+  height: 40px;
+}
 .home .home-header .home-header-item .user-header-img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   text-align: end;
   border-radius: 28px;
   box-shadow: 1px 1px 1px 1px #5e8ab67d;
@@ -21,31 +60,51 @@
   background-size: cover;
   margin-left: 11px;
 }
+.home .home-footer-text {
+  color: #fff;
+  font-size: 12px;
+}
+.home .home-footer-text a {
+  color: #fff;
+  text-decoration: underline;
+}
 .home .el-header {
-  background-color: #1b66c9;
+  padding: 0 0;
   color: #fff;
   text-align: center;
   line-height: 60px;
   width: 100%;
+  background: #667db6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .home .el-footer {
-  background-color: #1d1f22;
   color: #fff;
   text-align: center;
   line-height: 28px !important;
   width: 100%;
   height: 30px !important;
+  background: #0046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000046, #1cb5e0);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .home .el-aside {
-  background-color: #666;
-  color: #333;
   line-height: 200px;
-  width: 219px;
+  width: 220px !important;
   min-height: 100%;
   height: 100%;
-}
-.home body > .el-container {
-  margin-bottom: 40px;
+  background: #e0eafc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e0eafc, #cfdef3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .home .el-container:nth-child(5) .el-aside,
 .home .el-container:nth-child(6) .el-aside {
@@ -53,4 +112,8 @@
 }
 .home .el-container:nth-child(7) .el-aside {
   line-height: 320px;
+}
+ /deep/ .el-badge__content.is-fixed {
+  top: 14px !important;
+  right: 12px !important;
 }
