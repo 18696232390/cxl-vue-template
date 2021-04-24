@@ -1,5 +1,5 @@
 # 🎆cxl-vue-template
-🎆 基于Vue3+elementUI-Plus+TypeScript+Axios+MetroUI自用快速开发vue项目的模板
+🎆 基于Vue3+elementUI-Plus+TypeScript+Axios+MetroUI+Less自用快速开发vue项目的模板
 
 
 # 安装使用
