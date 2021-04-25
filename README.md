@@ -23,11 +23,31 @@ npm run serve
 - 集成 MetroUI ✔️
 - 集成 axios ✔️
 - 集成 sql-formatter ✔️
-- 集成 echarts
+- 集成 echarts ✔️
+- 集成 moment ⏱️
+- 集成 md5 ⏱️
+- 集成 live2d ⏱️
+- 集成 百度/高德地图 ⏱️
+- 集成 markdown ⏱️
+- 集成 videojs ⏱️
+- 集成 panolens.js (全景插件) ⏱️
 
 
-
-
+# 开发进度
+| 功能模块 | 集成状态 | 集成时间 |
+| - | - | - |
+| ElementUI-Plus | ✔️ | 2021/4/24 |
+| MetroUI | ✔️ | 2021/4/24 |
+| axios | ✔️ | 2021/4/24 |
+| sql-formatter | ✔️ | 2021/4/24 |
+| echarts | ✔️ | 2021/4/26 |
+| moment | ⏱️ |  |
+| md5 | ⏱️ |  |
+| live2d | ⏱️ |  |
+| 百度/高德地图 | ⏱️ |  |
+| markdown | ⏱️ |  |
+| video.js | ⏱️ |  |
+| panolens.js | ⏱️ | |
 
 
 
