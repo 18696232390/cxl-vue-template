@@ -1,3 +1,8 @@
-.dashboard{
-    margin-top: 2rem;
+.dashboard {
+  margin-top: 2rem;
+}
+.dashboard .dashboard-card-row {
+  box-shadow: 7px 6px 17px 0px #faf2f2;
+  margin-top: 1rem;
+  border-radius: 12px;
 }

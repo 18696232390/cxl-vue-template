@@ -4,13 +4,13 @@
     <el-breadcrumb-item>控制台</el-breadcrumb-item>
   </el-breadcrumb>
   <div class="dashboard">
-    <div>
+    <div class="dashboard-card-row">
       <Census></Census>
     </div>
-    <div>
+    <div class="dashboard-card-row">
       <Charts></Charts>
     </div>
-    <div>
+    <div class="dashboard-card-row">
       <Profile></Profile>
     </div>
   </div>
