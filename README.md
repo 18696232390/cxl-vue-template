@@ -36,7 +36,7 @@ npm run serve
 <img src="https://img03.sogoucdn.com/app/a/100520146/11a0867d12576428d0dbacd39ed4e3fe"/>
 
 > 首页
-<img src="https://img02.sogoucdn.com/app/a/100520146/4c45443d9cb9fadcc38ff512bf887328"/>
+<img src="https://z3.ax1x.com/2021/04/26/czhWIU.png"/>
 
 > 模拟列表页
 <img src="https://img04.sogoucdn.com/app/a/100520146/4dec3ef1cccf4653fe8d71f6602fd04a"/>
