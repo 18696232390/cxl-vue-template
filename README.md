@@ -23,7 +23,7 @@ npm run serve
 - 集成 MetroUI ✔️
 - 集成 axios ✔️
 - 集成 sql-formatter ✔️
-
+- 集成 echarts
 
 
 
