@@ -29,6 +29,7 @@ npm run serve
 - 集成 live2d ⏱️
 - 集成 百度/高德地图 ⏱️
 - 集成 markdown ⏱️
+- 集成 富文本编辑器 ⏱️
 - 集成 videojs ⏱️
 - 集成 panolens.js (全景插件) ⏱️
 
@@ -46,6 +47,7 @@ npm run serve
 | live2d | ⏱️ |  |
 | 百度/高德地图 | ⏱️ |  |
 | markdown | ⏱️ |  |
+| 富文本编辑器 | ⏱️ |  |
 | video.js | ⏱️ |  |
 | panolens.js | ⏱️ | |
 
