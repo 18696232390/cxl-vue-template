@@ -17,6 +17,8 @@ npm run serve
 默认登录账户密码 admin/123456
 
 
+> 开发文档 https://18696232390.github.io/cxl-vue-template/
+
 
 # 功能介绍
 - 集成 ElementUI-Plus ✔️
