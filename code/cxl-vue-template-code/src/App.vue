@@ -4,13 +4,44 @@
 
 <script lang="ts">
 import * as echarts from 'echarts';
-import { provide } from 'vue';
+import { provide, toRefs, reactive, onMounted } from 'vue';
 
 export default {
   name: 'App',
   setup() {
     console.log('初始化echarts对象', echarts);
     provide('echarts', echarts); //provide
+
+    const data = reactive({
+      enableLive2D: true,
+    });
+
+    onMounted(() => {
+      console.log('APP onMounted()');
+
+      if (data.enableLive2D) {
+        setTimeout(() => {
+          var peffex = 'koharu';
+          (window as any).L2Dwidget.init({
+            pluginRootPath: 'live2dw/',
+            pluginJsPath: 'lib/',
+            pluginModelPath: 'live2d-widget-model-' + peffex + '/assets/',
+            tagMode: true,
+            debug: false,
+            model: {
+              jsonPath: '../live2dw/live2d-widget-model-' + peffex + '/assets/' + peffex + '.model.json',
+            },
+            display: { position: 'right', width: 160, height: 410 },
+            mobile: { show: true },
+            log: false,
+          });
+        }, 1000);
+      }
+    });
+    const refData = toRefs(data);
+    return {
+      ...refData,
+    };
   },
   components: {},
 };
