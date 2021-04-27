@@ -20,7 +20,9 @@ npm run serve
 > 开发文档 https://18696232390.github.io/cxl-vue-template/
 
 
-# 功能介绍
+
+
+# 集成介绍
 - 集成 ElementUI-Plus ✔️
 - 集成 MetroUI ✔️
 - 集成 axios ✔️
@@ -29,13 +31,16 @@ npm run serve
 - 集成 moment ✔️
 - 集成 md5 ✔️
 - 集成 live2d ⏱️
-- 集成 百度/高德地图 ⏱️
+- 集成 百度/高德地图 ⏱️ (仅测试，暂无法进行集成，可能是我的方法错误，待研究)
 - 集成 markdown ✔️
-- 集成 富文本编辑器 ⏱️
-- 集成 videojs ⏱️
+- 集成 富文本编辑器  ✔️
+- 集成 videojs  ✔️
 - 集成 panolens.js (全景插件) ⏱️
 - 集成 docxtemplater (导出word) ⏱️
 - 集成 vue-json-excel (导出excel) ⏱️
+
+# 功能介绍
+- 404，外链跳转拦截  ✔️
 
 
 # 开发进度
@@ -48,15 +53,15 @@ npm run serve
 | echarts | ✔️ | 2021/4/26 |
 | moment |  ✔️ | 2021/4/27 |
 | md5 | ✔️ | 2021/4/27 |
-| live2d |  ✔️ | 2021/4/27 |
+| live2d |  ⏱️ | 2021/4/27 |
 | 百度/高德地图 | ⏱️ |  |
 | markdown | ✔️ | 2021/4/27 |
-| 富文本编辑器 | ⏱️ |  |
-| video.js | ⏱️ |  |
+| 富文本编辑器 | ✔️ | 2021/4/27 |
+| video.js | ✔️ | 2021/4/27  |
 | panolens.js | ⏱️ | |
 | docxtemplater.js | ⏱️ | |
 | vue-json-excel.js | ⏱️ | |
-
+| 404，外链跳转拦截 | ✔️ | 2021/4/27 |
 
 # 页面截图
 > 登录页
