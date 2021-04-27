@@ -26,11 +26,11 @@ npm run serve
 - 集成 axios ✔️
 - 集成 sql-formatter ✔️
 - 集成 echarts ✔️
-- 集成 moment ⏱️
-- 集成 md5 ⏱️
+- 集成 moment ✔️
+- 集成 md5 ✔️
 - 集成 live2d ⏱️
 - 集成 百度/高德地图 ⏱️
-- 集成 markdown ⏱️
+- 集成 markdown ✔️
 - 集成 富文本编辑器 ⏱️
 - 集成 videojs ⏱️
 - 集成 panolens.js (全景插件) ⏱️
@@ -46,11 +46,11 @@ npm run serve
 | axios | ✔️ | 2021/4/24 |
 | sql-formatter | ✔️ | 2021/4/24 |
 | echarts | ✔️ | 2021/4/26 |
-| moment | ⏱️ |  |
-| md5 | ⏱️ |  |
-| live2d | ⏱️ |  |
+| moment |  ✔️ | 2021/4/27 |
+| md5 | ✔️ | 2021/4/27 |
+| live2d |  ✔️ | 2021/4/27 |
 | 百度/高德地图 | ⏱️ |  |
-| markdown | ⏱️ |  |
+| markdown | ✔️ | 2021/4/27 |
 | 富文本编辑器 | ⏱️ |  |
 | video.js | ⏱️ |  |
 | panolens.js | ⏱️ | |
