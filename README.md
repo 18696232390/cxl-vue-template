@@ -31,16 +31,16 @@ npm run serve
 - 集成 moment ✔️
 - 集成 md5 ✔️
 - 集成 live2d ⏱️
-- 集成 百度/高德地图 ⏱️ (仅测试，暂无法进行集成，可能是我的方法错误，待研究)
+- 集成 百度/高德地图 ⏱️ (无法集成，待研究)
 - 集成 markdown ✔️
 - 集成 富文本编辑器  ✔️
 - 集成 videojs  ✔️
-- 集成 panolens.js (全景插件) ⏱️
-- 集成 docxtemplater (导出word) ⏱️
-- 集成 vue-json-excel (导出excel) ⏱️
-- 集成 zoomcharts
-- 集成 gojs
-- 集成 kityminder
+- 集成 panolens.js (全景插件) ⏱️ (无法集成，待研究)
+- 集成 docxtemplater (导出word) ✔️
+- 集成 vue-json-excel (导出excel) ⏱️ (无法集成，待研究)
+- 集成 zoomcharts ⏱️ (无法集成，待研究)
+- 集成 gojs ⏱️
+- 集成 kityminder ⏱️
 
 # 功能介绍
 - 404，外链跳转拦截  ✔️
@@ -62,7 +62,7 @@ npm run serve
 | 富文本编辑器 | ✔️ | 2021/4/27 |
 | video.js | ✔️ | 2021/4/27  |
 | panolens.js | ⏱️ | |
-| docxtemplater.js | ⏱️ | |
+| docxtemplater.js |  ✔️ | 2021/4/27 |
 | vue-json-excel.js | ⏱️ | |
 | 404，外链跳转拦截 | ✔️ | 2021/4/27 |
 | zoomcharts | ⏱️ | |
@@ -78,7 +78,6 @@ npm run serve
 
 > 模拟列表页
 <img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkdz46aj31jr0q0785.jpg"/>
-<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylmf4rtuj31jr0q0785.jpg"/>
 
 > 视频播放页
 <img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkdnz5fj31jo0pxwqm.jpg"/>
