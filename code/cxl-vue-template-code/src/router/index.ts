@@ -49,7 +49,25 @@ const routes: Array<RouteRecordRaw> = [
         path: '/md-edit',
         name: 'MdEdit',
         component: () => import("../views/home/plugins/md-edit/MdEdit.vue")
-      }
+      },
+      {
+        path: '/map-baidu',
+        name: 'MapBaidu',
+        component: () => import("../views/home/plugins/map-baidu/MapBaidu.vue")
+      },
+      {
+        path: '/map-gaode',
+        name: 'MapGaode',
+        component: () => import("../views/home/plugins/map-gaode/MapGaode.vue")
+      },{
+        path: '/rich-edit',
+        name: 'RichEdit',
+        component: () => import("../views/home/plugins/rich-edit/RichEdit.vue")
+      },{
+        path: '/video-start',
+        name: 'VideoStart',
+        component: () => import("../views/home/plugins/video-start/VideoStart.vue")
+      },
     ]
   },
     {
@@ -66,6 +84,18 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  },
+  {
+    path: "/routerAccess",
+    name: "RouterAccess",
+    component: () =>
+      import("../views/access/RouterAccess.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "PageNotFound",
+    component: () =>
+      import("../views/404/PageNotFound.vue"),
   },
 ];
 

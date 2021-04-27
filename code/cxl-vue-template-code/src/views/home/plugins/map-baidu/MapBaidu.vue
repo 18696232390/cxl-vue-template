@@ -6,16 +6,19 @@
   </el-breadcrumb>
 
   <div class="map-baidu">
-    <div>
-      地图
-     </div>
+    <div style="text-align: center">
+      <h2>暂不支持 “百度地图”</h2>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, toRefs, reactive, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
+// import BaiduMap from 'vue-baidu-map';    <baidu-map class="bm-view"> </baidu-map>
 export default defineComponent({
+  // BaiduMap
+  components: {},
   name: 'MapBaidu',
   setup() {
     const route = useRouter();

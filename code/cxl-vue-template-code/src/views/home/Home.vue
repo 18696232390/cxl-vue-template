@@ -53,7 +53,6 @@
             active-text-color="#000"
             @select="selectMenu"
           >
-          
             <el-menu-item index="dashboard">
               <i class="el-icon-s-home"></i>
               <template #title>首页</template>
@@ -104,7 +103,7 @@
                     <span>MarkDown</span>
                   </template>
                 </el-menu-item>
-                <el-menu-item index="baidu-baidu">
+                <el-menu-item index="map-baidu">
                   <template #title>
                     <i class="el-icon-s-help"></i>
                     <span>百度地图</span>
@@ -116,12 +115,24 @@
                     <span>高德地图</span>
                   </template>
                 </el-menu-item>
+                <el-menu-item index="video-start">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>视频播放器</span>
+                  </template>
+                </el-menu-item>
+                <el-menu-item index="rich-edit">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>富文本</span>
+                  </template>
+                </el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
-            <el-menu-item index="2">
+            <el-menu-item :index="'target=' + encodeURIComponent('https://github.com/18696232390/cxl-vue-template')">
               <i class="el-icon-c-scale-to-original"></i>
-              <template #title>测试导航</template>
+              <template #title>外链</template>
             </el-menu-item>
           </el-menu>
         </el-aside>
@@ -165,7 +176,14 @@ export default defineComponent({
       },
       selectMenu(key, t) {
         console.log('点击导航=>', key, t);
-        route.push(key);
+        if (key.startsWith('target')) {
+          console.log('外链');
+          var url = decodeURIComponent(key).split('=')[1];
+          console.log(url);
+          route.push('/routerAccess?type=url&url=' + encodeURIComponent(url));
+        } else {
+          route.push(key);
+        }
       },
 
       // 退出登录
