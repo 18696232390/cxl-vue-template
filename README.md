@@ -63,7 +63,7 @@ npm run serve
 | video.js | ✔️ | 2021/4/27  |
 | panolens.js | 🛑 | STOP |
 | docxtemplater.js |  ✔️ | 2021/4/27 |
-| vue-json-excel.js | 🛑 | |
+| vue-json-excel.js | 🛑 | STOP |
 | 404，外链跳转拦截 | ✔️ | 2021/4/27 |
 | zoomcharts | 🛑 | STOP |
 | gojs | ⏱️ | |
