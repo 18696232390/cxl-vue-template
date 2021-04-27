@@ -38,6 +38,9 @@ npm run serve
 - 集成 panolens.js (全景插件) ⏱️
 - 集成 docxtemplater (导出word) ⏱️
 - 集成 vue-json-excel (导出excel) ⏱️
+- 集成 zoomcharts
+- 集成 gojs
+- 集成 kityminder
 
 # 功能介绍
 - 404，外链跳转拦截  ✔️
@@ -62,13 +65,31 @@ npm run serve
 | docxtemplater.js | ⏱️ | |
 | vue-json-excel.js | ⏱️ | |
 | 404，外链跳转拦截 | ✔️ | 2021/4/27 |
+| zoomcharts | ⏱️ | |
+| gojs | ⏱️ | |
+| kityminder | ⏱️ | |
 
 # 页面截图
 > 登录页
-<img src="https://img03.sogoucdn.com/app/a/100520146/11a0867d12576428d0dbacd39ed4e3fe"/>
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkefoklj31jz0q1gzz.jpg"/>
 
 > 首页
-<img src="https://z3.ax1x.com/2021/04/26/czhWIU.png"/>
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkdb3g1j31jr0q0q8s.jpg"/>
 
 > 模拟列表页
-<img src="https://img04.sogoucdn.com/app/a/100520146/4dec3ef1cccf4653fe8d71f6602fd04a"/>
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkdz46aj31jr0q0785.jpg"/>
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylmf4rtuj31jr0q0785.jpg"/>
+
+> 视频播放页
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkdnz5fj31jo0pxwqm.jpg"/>
+
+> 外链拦截
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkdvfyij31j80pgq3i.jpg"/>
+
+> 加解密，格式化
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkdswqdj31jr0q0ad5.jpg"/>
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkda7wsj31jn0pwq6c.jpg"/>
+
+> 富文本
+<img src="http://ww1.sinaimg.cn/large/006BuaAIgy1gpylkdc9m8j31jr0q0whi.jpg"/>
+
