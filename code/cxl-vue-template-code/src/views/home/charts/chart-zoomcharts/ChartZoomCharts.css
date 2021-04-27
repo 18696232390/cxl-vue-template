@@ -1,0 +1,7 @@
+.chart-zoomcharts {
+  margin-top: 2rem;
+}
+.chart-zoomcharts #zmChart {
+  width: 20rem;
+  height: 20rem;
+}

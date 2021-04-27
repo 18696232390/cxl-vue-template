@@ -127,6 +127,45 @@
                     <span>富文本</span>
                   </template>
                 </el-menu-item>
+
+                <el-menu-item index="vue-vr">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>VR全景插件</span>
+                  </template>
+                </el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+            <el-submenu index="charts">
+              <template #title>
+                <i class="el-icon-setting"></i>
+                <span>图表库</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="chart-echarts">
+                  <i class="el-icon-user"></i>
+                  <template #title>Echarts图表</template>
+                </el-menu-item>
+                <el-menu-item index="chart-highcharts">
+                  <i class="el-icon-user"></i>
+                  <template #title>HighCharts图表</template>
+                </el-menu-item>
+                <el-menu-item index="chart-zoomcharts">
+                  <i class="el-icon-star-on"></i>
+                  <template #title>Zoomcharts图表</template>
+                </el-menu-item>
+                <el-menu-item index="chart-gojs">
+                  <i class="el-icon-star-on"></i>
+                  <template #title>go.js图表</template>
+                </el-menu-item>
+                <el-menu-item index="chart-g6">
+                  <i class="el-icon-star-on"></i>
+                  <template #title>G6图表</template>
+                </el-menu-item>
+                <el-menu-item index="chart-kityminder">
+                  <i class="el-icon-star-on"></i>
+                  <template #title>kityminder思维导图</template>
+                </el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
@@ -216,5 +255,5 @@ export default defineComponent({
 });
 </script>
 <style scoped lang="less">
-@import url('./home.less');
+@import url('./Home.less');
 </style>

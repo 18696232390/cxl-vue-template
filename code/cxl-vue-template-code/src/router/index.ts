@@ -67,6 +67,14 @@ const routes: Array<RouteRecordRaw> = [
         path: '/video-start',
         name: 'VideoStart',
         component: () => import("../views/home/plugins/video-start/VideoStart.vue")
+      },{
+        path: '/vue-vr',
+        name: 'VueVr',
+        component: () => import("../views/home/plugins/vue-vr/VueVr.vue")
+      },{
+        path: '/chart-zoomcharts',
+        name: 'ChartZoomcharts',
+        component: () => import("../views/home/charts/chart-zoomcharts/ChartZoomcharts.vue")
       },
     ]
   },

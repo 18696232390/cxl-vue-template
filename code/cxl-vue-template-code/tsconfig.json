@@ -14,6 +14,7 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
+      "zoomcharts",
       "jest"
     ],
     "paths": {

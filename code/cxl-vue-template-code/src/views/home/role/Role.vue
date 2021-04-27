@@ -206,5 +206,5 @@ export default defineComponent({
 });
 </script>
 <style scoped lang="less">
-@import url('./role.less');
+@import url('./Role.less');
 </style>

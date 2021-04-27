@@ -13,6 +13,7 @@ import { plugin } from 'echarts-for-vue';
 import elementUI from 'element-plus';
 
 import App from './App.vue';
+import globalCom from './glboalCom';
 import router from './router';
 import store from './store';
 
@@ -33,7 +34,18 @@ Vue.use(router);
 // });
 
 Vue.use(elementUI,  { size: 'small', zIndex: 3000 });
-Vue.use(plugin, { echarts, h });      
+Vue.use(plugin, { echarts, h });
+
+
+
+
+
+
+Vue.use(globalCom,{
+    components:[] //这里传入的是组件的name值
+})
+
+
 Vue.mount("#app");
 
 // Vue.config.globalProperties.echarts = echarts
