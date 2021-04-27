@@ -34,6 +34,8 @@ npm run serve
 - 集成 富文本编辑器 ⏱️
 - 集成 videojs ⏱️
 - 集成 panolens.js (全景插件) ⏱️
+- 集成 docxtemplater (导出word) ⏱️
+- 集成 vue-json-excel (导出excel) ⏱️
 
 
 # 开发进度
@@ -52,7 +54,8 @@ npm run serve
 | 富文本编辑器 | ⏱️ |  |
 | video.js | ⏱️ |  |
 | panolens.js | ⏱️ | |
-
+| docxtemplater.js | ⏱️ | |
+| vue-json-excel.js | ⏱️ | |
 
 
 # 页面截图
