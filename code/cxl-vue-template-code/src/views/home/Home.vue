@@ -53,6 +53,7 @@
             active-text-color="#000"
             @select="selectMenu"
           >
+          
             <el-menu-item index="dashboard">
               <i class="el-icon-s-home"></i>
               <template #title>首页</template>
@@ -83,6 +84,36 @@
                   <template #title>
                     <i class="el-icon-s-help"></i>
                     <span>SQL格式化</span>
+                  </template>
+                </el-menu-item>
+                <el-menu-item index="time-format">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>日期格式化</span>
+                  </template>
+                </el-menu-item>
+                <el-menu-item index="md5-encrypt">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>MD5加密</span>
+                  </template>
+                </el-menu-item>
+                <el-menu-item index="md-edit">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>MarkDown</span>
+                  </template>
+                </el-menu-item>
+                <el-menu-item index="baidu-baidu">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>百度地图</span>
+                  </template>
+                </el-menu-item>
+                <el-menu-item index="map-gaode">
+                  <template #title>
+                    <i class="el-icon-s-help"></i>
+                    <span>高德地图</span>
                   </template>
                 </el-menu-item>
               </el-menu-item-group>

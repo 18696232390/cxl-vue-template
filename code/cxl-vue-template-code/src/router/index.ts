@@ -34,6 +34,21 @@ const routes: Array<RouteRecordRaw> = [
         path: '/sql-format',
         name: 'SqlFormat',
         component: () => import("../views/home/plugins/sql-format/SqlFormat.vue")
+      },
+      {
+        path: '/time-format',
+        name: 'TimeFormat',
+        component: () => import("../views/home/plugins/time-format/TimeFormat.vue")
+      },
+      {
+        path: '/md5-encrypt',
+        name: 'Md5Encrypt',
+        component: () => import("../views/home/plugins/md5-encrypt/Md5Encrypt.vue")
+      },
+      {
+        path: '/md-edit',
+        name: 'MdEdit',
+        component: () => import("../views/home/plugins/md-edit/MdEdit.vue")
       }
     ]
   },

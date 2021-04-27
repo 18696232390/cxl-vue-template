@@ -16,12 +16,19 @@
     "echarts-for-vue": "^1.1.1",
     "element-plus": "^1.0.2-beta.40",
     "highcharts-vue": "^1.3.5",
+    "js-md5": "^0.7.3",
+    "lodash": "^4.17.21",
+    "marked": "^0.3.6",
+    "moment": "^2.29.1",
     "register-service-worker": "^1.7.1",
     "sql-formatter": "^4.0.2",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0"
+    "vuex": "^4.0.0-0",
+    "vue-codemirror": "^4.0.6",
+    "vue-amap": "^0.5.10",
+    "vue-baidu-map": "^0.21.22"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",

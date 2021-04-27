@@ -39,6 +39,8 @@
 </template>
 
 <script lang="ts">
+/* eslint-disable */
+
 import { defineComponent, toRefs, reactive, onMounted } from 'vue';
 
 import { useRouter } from 'vue-router';
